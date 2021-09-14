@@ -4,9 +4,9 @@
 
 - **[2020.1 - ~ 通杀loader来自x-Ai](https://github.com/x-Ai/BurpSuiteLoader)**
 
-**据官方消息，官方对网站进行了调整，且故意开放了各系统的下载接口**
+**According to official news, the official adjusted the website and deliberately opened the download interface of each system**
 
-**下载方式**
+**Download method**
 
 ```
 https://portswigger.net/burp/releases/download?product=pro&version=2020.11.3&type=jar
@@ -18,7 +18,7 @@ https://portswigger.net/burp/releases/download?product=pro&version=2020.11.3&typ
 https://portswigger.net/burp/releases/download?product=pro&version=2020.11.3&type=linux
 ```
 
-**不但新版可以下载，旧版本也可以！！！**
+**Not only the new version can be downloaded, but also the old version！！！**
 
 > **SHA256 && MD5**
 
@@ -32,30 +32,30 @@ https://portswigger.net/burp/releases/download?product=pro&version=2020.11.3&typ
 
 > **Win使用**
 
-*一、初次使用*
+*一、First use*
 
   ```
-  0x00 - 配置好java环境，Java9-Java14
-  0x01 - 启动 burp-keygen-scz.jar，用来破解license
+  0x00 - Configure the java environment, Java9-Java14
+  0x01 - Start burp-keygen-scz.jar to crack the license
   Powershell：java -jar "C:\Users\User\Desktop\burp-keygen-scz.jar"
 
-  0x02 - 加载 burp-loader-x-Ai.jar 启动 burpsuite_pro_v2020.11.3.jar
+  0x02 - load burp-loader-x-Ai.jar start up burpsuite_pro_v2020.11.3.jar
   Powershell：java -noverify -javaagent:"C:\Users\User\Desktop\burp-loader-x-Ai.jar" -Xmx2048m -jar "C:\Users\User\Desktop\burpsuite_pro_v2020.11.3.jar"
 
-  0x03 - BurpSuite界面取消协助，同意协议
-  0x04 - 随意修改 burp-keygen-scz 的 License Text
-  0x05 - 把 License 复制到 BurpSuite
-  0x06 - 点击 Manual activation，点击 Copy request
-  0x07 - 把 Request 复制到 burp-keygen-scz 的 Activation Request
-  0x08 - 把自动生成的 Activation Response 复制回 BurpSuite
-  0x09 - 完成，开始使用
-  0x10 - 持久启动必须加载 burp-loader-x-Ai.jar，不然依旧要license key
+  0x03 - BurpSuite interface cancels assistance and agrees to the agreement
+  0x04 - Feel free to modify the License Text of burp-keygen-scz
+  0x05 - Copy the license to BurpSuite
+  0x06 - Click Manual activation, click Copy request
+  0x07 - Copy the Request to the Activation Request of burp-keygen-scz
+  0x08 - Copy the automatically generated Activation Response back to BurpSuite
+  0x09 - Finish, start using
+  0x10 - Persistent startup must load burp-loader-x-Ai.jar, otherwise the license key is still required
   ```
 
-*二、使用过bp，已激活过license*
+*二、Have used bp and activated the license*
 
   ```
-  0x01 - 直接加载 burp-loader-x-Ai.jar 启动 burpsuite_pro_v2020.11.3.jar
+  0x01 - Load burp-loader-x-Ai.jar directly and start burpsuite_pro_v2020.11.3.jar
   Powershell：java -noverify -javaagent:"C:\Users\User\Desktop\burp-loader-x-Ai.jar" -Xmx2048m -jar "C:\Users\User\Desktop\burpsuite_pro_v2020.11.3.jar"
   ```
 
